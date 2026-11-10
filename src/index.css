@@ -1,0 +1,50 @@
+:root {
+  --navy-primary: #1b263b;
+  --navy-sidebar: #0f172a;
+  --earth-brown: #8d6e63;
+  --cream-bg: #fdfbf7;
+  --charcoal-grey: #334155;
+}
+
+body {
+  background-color: var(--cream-bg);
+  color: var(--charcoal-grey);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-navy {
+  background-color: var(--navy-primary) !important;
+}
+
+.bg-sidebar {
+  background-color: var(--navy-sidebar) !important;
+}
+
+.text-earth {
+  color: var(--earth-brown) !important;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.5rem;
+}
+/* Sticky Mobile Hamburger Header */
+@media (max-width: 991.98px) {
+  .mobile-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Agar selalu berada di atas elemen konten lainnya */
+  }
+}
+
+/* Sticky Sidebar untuk Desktop */
+@media (min-width: 992px) {
+  .sticky-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
